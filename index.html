@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unifeed Blog</title>
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <!-- Navbar -->
-            <nav class="navbar">
-                <div class="navbar-brand">
-                    <img src="./images/Logo.svg" alt="logo" class="navbar-brand__img"/>
-                </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Unifeed Blog</title>
 
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a href="#home" class="navbar-item__link">Home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#features" class="navbar-item__link">Features</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#pricing" class="navbar-item__link">Pricing</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="subscribe" class="navbar-item__link">Subscribe</a>
-                    </li>
+        <!-- Style file -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <!-- Navbar -->
+                <nav class="navbar">
+                    <div class="navbar-container">
+                        <img
+                            src="./images/Logo.svg"
+                            alt="logo"
+                            class="navbar-brand__img"
+                        />
 
-                    <div class="navbar-toggle">
-                        <img src="./images/Hamburger Menu.svg" alt="toggle" class="navbar-toggle__img"/>
+                        <ul class="navbar-list">
+                            <li class="navbar-item">
+                                <a href="#home" class="navbar-item__link"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#features" class="navbar-item__link"
+                                    >Features</a
+                                >
+                            </li>
+                            <li class="navbar-item">
+                                <a href="#pricing" class="navbar-item__link"
+                                    >Pricing</a
+                                >
+                            </li>
+                            <li class="navbar-item--btn">
+                                <a
+                                    href="subscribe"
+                                    class="
+                                        navbar-item__link
+                                        navbar-item--btn__link
+                                    "
+                                    >Subscribe</a
+                                >
+                            </li>
+                        </ul>
                     </div>
-                </ul>
-            </nav>
-            
-            <!-- Hero -->
-        </div>
-    </header>
-</body>
+
+                    <img
+                        class="navbar-toggle"
+                        src="./images/Hamburger Menu.svg"
+                        alt="toggle"
+                    />
+                </nav>
+
+                <!-- Hero -->
+            </div>
+        </header>
+
+        <!-- JavaScript file -->
+        <script src="./js/toggle.js"></script>
+    </body>
 </html>
