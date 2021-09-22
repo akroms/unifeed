@@ -28,6 +28,10 @@ html {
   margin: auto;
 }
 
+.mt-1 {
+  margin-top: 1em !important;
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -82,7 +86,7 @@ html {
   align-items: center;
 }
 .hero-profile__image {
-  max-width: 60px;
+  max-width: 50px;
 }
 .hero-profile-container {
   margin-left: 1em;
@@ -92,6 +96,13 @@ html {
 }
 .hero-profile__jobtitle {
   color: #656565;
+}
+
+/* footer */
+.footer-copyright {
+  margin: 0.6em 0 2em 0;
+  color: #656565;
+  font-size: 1.1em;
 }
 
 @media (min-width: 576px) {
@@ -108,8 +119,28 @@ html {
   .hero-title {
     margin-bottom: 0.2em;
   }
+
+  /* Cards */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    margin: 4em 0;
+  }
+
+  /* footer */
+  .footer > .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-copyright {
+    margin: 0.6em 0 2em 0;
+    color: #656565;
+    font-size: 1.1em;
+  }
 }
 @media (min-width: 768px) {
+  /* Navbar */
   .navbar-list {
     display: flex;
     align-items: center;
@@ -141,6 +172,11 @@ html {
   }
   .hero-profile {
     margin: 3em 0 0 0;
+  }
+
+  /* Cards */
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
