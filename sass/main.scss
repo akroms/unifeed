@@ -33,6 +33,10 @@ html {
     margin: auto;
 }
 
+.mt-1 {
+    margin-top: 1em !important;
+}
+
 /* Navbar */
 
 .navbar {
@@ -89,7 +93,7 @@ html {
         display: flex;
         align-items: center;
         &__image {
-            max-width: 60px;
+            max-width: 50px;
         }
         &-container {
             margin-left: 1em;
@@ -100,6 +104,16 @@ html {
         &__jobtitle {
             color: $light-gray;
         }
+    }
+}
+
+/* footer */
+
+.footer {
+    &-copyright {
+        margin: 0.6em 0 2em 0;
+        color: $light-gray;
+        font-size: 1.1em;
     }
 }
 
@@ -117,9 +131,31 @@ html {
             margin-bottom: 0.2em;
         }
     }
+
+    /* Cards */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2em;
+        margin: 4em 0;
+    }
+
+    /* footer */
+    .footer {
+        > .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-copyright {
+            margin: 0.6em 0 2em 0;
+            color: $light-gray;
+            font-size: 1.1em;
+        }
+    }
 }
 
 @media (min-width: 768px) {
+    /* Navbar */
     .navbar {
         &-list {
             display: flex;
@@ -154,5 +190,10 @@ html {
         &-profile {
             margin: 3em 0 0 0;
         }
+    }
+
+    /* Cards */
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
