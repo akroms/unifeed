@@ -13,7 +13,15 @@ li {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Base Style */
+html {
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
   width: 90%;
   max-width: 1300px;
@@ -25,7 +33,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2em 0 1em 0;
+  margin: 2em 0 2em 0;
 }
 .navbar-brand {
   margin: -0.3em 0 0 0;
@@ -52,6 +60,55 @@ li {
   font-weight: 600;
 }
 
+/* Hero Section */
+.hero-image {
+  max-width: 500px;
+}
+.hero-content {
+  margin: 1em 0;
+}
+.hero-title {
+  margin-bottom: 0.6em;
+  font-weight: 500;
+}
+.hero-subtitle {
+  margin-bottom: 0.7em;
+  color: #656565;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.hero-profile {
+  display: flex;
+  align-items: center;
+}
+.hero-profile__image {
+  max-width: 60px;
+}
+.hero-profile-container {
+  margin-left: 1em;
+}
+.hero-profile__name {
+  font-weight: 600;
+}
+.hero-profile__jobtitle {
+  color: #656565;
+}
+
+@media (min-width: 576px) {
+  /* Hero Section */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: flex-start;
+  }
+  .hero-content {
+    margin: 0;
+  }
+  .hero-title {
+    margin-bottom: 0.2em;
+  }
+}
 @media (min-width: 768px) {
   .navbar-list {
     display: flex;
@@ -62,11 +119,28 @@ li {
   .navbar-toggle {
     display: none;
   }
-
   .navbar-container {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  /* Hero */
+  .hero {
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+  }
+  .hero-title {
+    font-size: 2.5em;
+    margin-bottom: 0.1em;
+    font-weight: 500;
+  }
+  .hero-subtitle {
+    margin: 1em 0;
+  }
+  .hero-profile {
+    margin: 3em 0 0 0;
   }
 }
 
