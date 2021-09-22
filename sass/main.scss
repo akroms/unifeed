@@ -17,7 +17,15 @@ li {
     list-style: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 /* Base Style */
+
+html {
+    font-family: "Roboto", sans-serif;
+}
 
 .container {
     width: 90%;
@@ -31,7 +39,7 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 2em 0 1em 0;
+    margin: 2em 0 2em 0;
     &-brand {
         margin: -0.3em 0 0 0;
     }
@@ -59,7 +67,56 @@ li {
     }
 }
 
+/* Hero Section */
+.hero {
+    &-image {
+        max-width: 500px;
+    }
+    &-content {
+        margin: 1em 0;
+    }
+    &-title {
+        margin-bottom: 0.6em;
+        font-weight: 500;
+    }
+    &-subtitle {
+        margin-bottom: 0.7em;
+        color: $light-gray;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    &-profile {
+        display: flex;
+        align-items: center;
+        &__image {
+            max-width: 60px;
+        }
+        &-container {
+            margin-left: 1em;
+        }
+        &__name {
+            font-weight: 600;
+        }
+        &__jobtitle {
+            color: $light-gray;
+        }
+    }
+}
+
 @media (min-width: 576px) {
+    /* Hero Section */
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        align-items: flex-start;
+        &-content {
+            margin: 0;
+        }
+        &-title {
+            margin-bottom: 0.2em;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -73,12 +130,29 @@ li {
         &-toggle {
             display: none;
         }
-    }
-    .navbar-container {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
+        &-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
     }
 }
 
-
+@media (min-width: 1024px) {
+    /* Hero */
+    .hero {
+        grid-template-columns: 1fr 2fr;
+        gap: 2em;
+        &-title {
+            font-size: 2.5em;
+            margin-bottom: 0.1em;
+            font-weight: 500;
+        }
+        &-subtitle {
+            margin: 1em 0;
+        }
+        &-profile {
+            margin: 3em 0 0 0;
+        }
+    }
+}
