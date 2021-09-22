@@ -1,5 +1,5 @@
-// Variables 
-@import "./variables"; 
+// Variables
+@import "./variables";
 
 /* Reset */
 
@@ -31,7 +31,6 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
     margin: 2em 0 1em 0;
     &-brand {
         margin: -0.3em 0 0 0;
@@ -60,12 +59,10 @@ li {
     }
 }
 
-
-@media (min-width:576px) {
-    
+@media (min-width: 576px) {
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
     .navbar {
         &-list {
             display: flex;
@@ -83,3 +80,5 @@ li {
         width: 100%;
     }
 }
+
+
